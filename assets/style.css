@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.title h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+h1 {
+    color: #333;
+}
+
+body{
+    background: #333;
+}
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Para alinhar os itens no topo */
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Coluna esquerda com os contêineres */
+.left-column {
+    display: flex;
+    flex-direction: column;
+    width: 30%; /* Coluna para os contêineres de cálculo */
+    gap: 20px;
+}
+
+/* Estilo para os contêineres de cálculo */
+.container {
+    background-color: #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.container h2 {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.container h3 {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.container input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.container button {
+    width: 90%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.container button:hover {
+    background-color: #0056b3;
+}
+
+/* Seção de resultados à direita */
+.result {
+    background-color: #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 68%; /* O resultado ocupa o restante do espaço */
+    height: 90%;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
+}
+
+.result h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#results {
+    color: #555;
+    font-size: 1em;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Para navegadores Firefox */
+    -webkit-appearance: none; /* Para navegadores baseados no WebKit (Chrome, Safari) */
+    appearance: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.result h3 {
+    color: #333;
+   text-align: center;
+}

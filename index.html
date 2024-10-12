@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Matemática Avançada</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <div class="title">
+        <h1>Calculadora Matemática Avançada</h1>
+    </div>
+
+    <div class="main-content">
+        <!-- Coluna esquerda com os contêineres de cálculos -->
+        <div class="left-column">
+            <div class="container">
+                <h2>Fibonacci</h2>
+                <h3>Inserir o valor entre 0 e 1000</h3>
+                <input type="number" id="fibonacciNumber" min="0" max="1000" placeholder="Digite um número">
+                <button onclick="calculateFibonacci()">Calcular Fibonacci (JS)</button>
+                <button onclick="calculateFibonacciPHP()">Calcular Fibonacci (PHP)</button>
+            </div>
+
+            <div class="container">
+                <h2>Fatorial</h2>
+                <input type="number" id="factorialNumber" min="0" placeholder="Digite um número">
+                <button onclick="calculateFactorial()">Calcular Fatorial (JS)</button>
+                <button onclick="calculateFactorialPHP()">Calcular Fatorial (PHP)</button>
+            </div>
+
+            <div class="container">
+                <h2>Operações com Vetores</h2>
+                <input type="text" id="vectorA" placeholder="Digite vetor A (ex: 1,2,3)">
+                <input type="text" id="vectorB" placeholder="Digite vetor B (ex: 4,5,6)">
+                <button onclick="calculateVectors()">Calcular Vetores (JS)</button>
+                <button onclick="calculateVectorsPHP()">Calcular Vetores (PHP)</button>
+            </div>
+        </div>
+
+        <!-- Seção de resultados à direita -->
+        <div class="result">
+            <h3>Resultados:</h3>
+            <div id="results"></div>
+        </div>
+    </div>
+
+    <script src="/assets/script.js"></script>
+</body>
+</html>
